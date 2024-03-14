@@ -23,7 +23,6 @@ namespace BetterDecorator
             Console.WriteLine(Decor(str,chr,intg));
             
         }
-
         /// <summary>
         /// Creates a decorated string with the given arguments.
         /// </summary>
@@ -45,6 +44,10 @@ namespace BetterDecorator
             result = $"{decorator} {s} {decorator}";
 
             return result;
+        }
+        private static string Decor()
+        {
+            
         }
     }
 }
