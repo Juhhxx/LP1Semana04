@@ -6,7 +6,11 @@ namespace Special
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
+        }
+        private static int GetSpecial(int n)
+        {
+            
         }
     }
 }
