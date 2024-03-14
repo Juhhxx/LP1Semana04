@@ -15,8 +15,17 @@ namespace BetterDecorator
         }
         private static string Decor(string s, char c, int i)
         {
-            string test = $"{s}, {c}, {i}";
-            return test;
+            string result;
+            string decorator = "";
+
+            for (int j = 0; j < i; j++)
+            {
+                decorator += c;
+            }
+
+            result = $"{decorator} {s} {decorator}";
+
+            return result;
         }
     }
 }
