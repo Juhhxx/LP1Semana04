@@ -2,6 +2,10 @@
 
 namespace BetterDecorator
 {
+    /// <summary>
+    /// The program creates a decorated string using the inputs provided by the
+    /// user.
+    /// </summary>
     class Program
     {
         /// <summary>
