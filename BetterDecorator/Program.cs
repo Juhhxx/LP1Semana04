@@ -4,6 +4,12 @@ namespace BetterDecorator
 {
     class Program
     {
+        /// <summary>
+        /// Converts the arguments given by the user into the ones that are
+        /// going to be used on the Decor() method and calls that method.
+        /// </summary>
+        /// <param name="args">Arguments in string format to be used by the
+        /// Decor() method.</param>
         static void Main(string[] args)
         {
             string str = args[0];
@@ -13,6 +19,15 @@ namespace BetterDecorator
             Console.WriteLine(Decor(str,chr,intg));
             
         }
+
+        /// <summary>
+        /// Creates a decorated string with the given arguments.
+        /// </summary>
+        /// <param name="s">Main string.</param>
+        /// <param name="c">String decorator.</param>
+        /// <param name="i">Times the decorator will be display on each side of 
+        /// the string.</param>
+        /// <returns></returns>
         private static string Decor(string s, char c, int i)
         {
             string result;
