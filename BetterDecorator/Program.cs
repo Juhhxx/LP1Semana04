@@ -10,10 +10,11 @@ namespace BetterDecorator
     {
         /// <summary>
         /// Converts the arguments given by the user into the ones that are
-        /// going to be used on the Decor() method and calls that method.
+        /// going to be used on the Decor(s,c,i) method and calls that method,
+        /// if the user has provided no arguments, ir calls Decor() instead.
         /// </summary>
         /// <param name="args">Arguments in string format to be used by the
-        /// Decor() method.</param>
+        /// Decor(s,c,i) method.</param>
         static void Main(string[] args)
         {
             if (args.Length == 0) 
@@ -51,6 +52,11 @@ namespace BetterDecorator
 
             return result;
         }
+        /// <summary>
+        /// Calls the Decor(s,c,i) method to inform the user that he has not
+        /// provided any arguments.
+        /// </summary>
+        /// <returns></returns>
         private static string Decor()
         {
             return Decor("User did not specify args!", '=', 3);
