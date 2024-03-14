@@ -16,12 +16,18 @@ namespace BetterDecorator
         /// Decor() method.</param>
         static void Main(string[] args)
         {
-            string str = args[0];
-            char chr = char.Parse(args[1]);
-            int intg = int.Parse(args[2]);
+            if (args.Length == 0) 
+            {
+                Console.WriteLine(Decor());
+            }
+            else
+            {
+                string str = args[0];
+                char chr = char.Parse(args[1]);
+                int intg = int.Parse(args[2]);
 
-            Console.WriteLine(Decor(str,chr,intg));
-            
+                Console.WriteLine(Decor(str,chr,intg));
+            }
         }
         /// <summary>
         /// Creates a decorated string with the given arguments.
@@ -47,7 +53,7 @@ namespace BetterDecorator
         }
         private static string Decor()
         {
-            return Decor("User did specify args!", '=', 3);
+            return Decor("User did not specify args!", '=', 3);
         }
     }
 }
