@@ -6,7 +6,11 @@ namespace BetterDecorator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
+        }
+        private static string Decor(string s, char c, int i)
+        {
+            
         }
     }
 }
