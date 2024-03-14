@@ -47,7 +47,7 @@ namespace BetterDecorator
         }
         private static string Decor()
         {
-            
+            return Decor("User did specify args!", '=', 3);
         }
     }
 }
